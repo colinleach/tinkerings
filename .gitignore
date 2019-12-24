@@ -134,3 +134,4 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 docs/_site
+docs/_site/index.html
