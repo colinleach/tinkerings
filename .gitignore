@@ -133,3 +133,4 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+docs/_site

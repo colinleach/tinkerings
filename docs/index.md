@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
@@ -9,3 +6,8 @@ This site collects various software-related links. The [GitHub site](https://git
 
 See also the related [astro-Jupyter site](https://github.com/colinleach/astro-Jupyter) for entries specific to Jupyter notebooks and astronomy.
 
+
+{% for topic in site.data.topics %}
+## [{{ topic.name }}]({{ topic.path }})
+{{ topic.description }}
+ {% endfor %}

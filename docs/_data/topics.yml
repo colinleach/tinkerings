@@ -1,0 +1,23 @@
+- name: General Python
+  description: Recent language enhancements, development tools, etc
+  path: /genpython
+
+- name: Jupyter
+  description: Notebook add-ins, best practice
+  path: /jupyter
+
+- name: Web programming
+  description: Jekyll, Flask, Django (but no Rails or server-side JavaScript)
+  path: /webprog
+  
+- name: Miscellaneous programming
+  description: Things that don't fit in other sections
+  path: /miscprog
+
+- name: Astronomy tools
+  description: Mainly Astropy packages and affiliates
+  path: /astrotools
+  
+- name: Computational astrophysics
+  description: Various open-source codes
+  path: /compastro
