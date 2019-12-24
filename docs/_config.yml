@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -50,3 +51,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+=======
+theme: jekyll-theme-time-machine
+>>>>>>> 19bf7f95d850276c6bb5eee4f6e13b02d807ed23
