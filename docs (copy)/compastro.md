@@ -1,6 +1,5 @@
 ---
 title: Computational Astrophysics
-nav_order: 11
 ---
 
 ## NEMO

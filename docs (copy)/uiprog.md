@@ -1,6 +1,5 @@
 ---
 title: UI Programming
-nav_order: 4
 ---
 
 ## Qt

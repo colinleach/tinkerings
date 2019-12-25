@@ -1,6 +1,5 @@
 ---
 title: General Python
-nav_order: 1
 ---
 
 ## Virtual environments

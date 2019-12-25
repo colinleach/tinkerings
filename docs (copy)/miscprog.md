@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Programming
-nav_order: 5
 ---
 
 ## Docker

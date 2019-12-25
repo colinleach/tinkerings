@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Colin's Tinkerings in Software
+title: Colin's Tinkerings in Software and Astronomy
 author: Colin Leach
 description: >- # this means to ignore newlines until "baseurl:"
   Collects links and documentation that I found useful, plus some working code examples that helped me learn
-baseurl: "/tinkerings/" # the subpath of your site, e.g. /blog
+baseurl: "/tinkerings" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  colinleach
 
 # Build settings
-theme: "just-the-docs"
+# theme: jekyll-theme-minimal
 plugins:
 #  - jekyll-feed
 

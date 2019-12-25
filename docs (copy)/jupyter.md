@@ -1,6 +1,5 @@
 ---
 title: Jupyter
-nav_order: 2
 ---
 
 ## Extensions
