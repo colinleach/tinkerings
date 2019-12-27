@@ -6,12 +6,10 @@ Note that this only ever ran locally on my Linux box at home. Public deployment 
 
 ## gunicorn/nginx deployment
 Installing these is system dependent. I just did
-
 ```sudo apt install gunicorn3 python3-gunicorn nginx-full```
-
 but Google will give alternatives.
 
 `gunicorn_start.sh` can go in the same directory as the Python code. `atmos.conf` needs to be moved (or symlinked) to the nginx configuration directory, probably something like `/etc/nginx/conf.d/`.
 
 ## Apache/mod_wsgi deployment
-This may be easier if Apache is already running for other reasons. I've done this for Django apps but never for WSGI. It must be possible...
+This may be easier if Apache is already running for other reasons. I've done this for Django apps but never for simple WSGI. It must be possible...
