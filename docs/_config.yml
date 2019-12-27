@@ -26,8 +26,12 @@ baseurl: "/tinkerings/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  colinleach
 
+# footer_content: colinleach
+
 # Build settings
+search_enabled: false
 # theme: "just-the-docs"
+# the theme gem works locally but GitHub Pages needs remote_theme:
 remote_theme: pmarsceill/just-the-docs
 plugins:
 #  - jekyll-feed

@@ -1,5 +1,7 @@
 ---
 layout: home
+title: Home
+nav_order: 0
 ---
 
 This site collects various software-related links. The [GitHub site](https://github.com/colinleach/tinkerings) that hosts these Pages also has (or will have) some example code that I wrote while practicing.
