@@ -15,6 +15,11 @@ Docker Engine is available (without the fancy GUI) for many Linux versions. On M
 ```sh
 sudo add-apt-repository "deb https://download.docker.com/linux/ubuntu bionic stable"
 ```
+## Learning about Docker
+There are plenty of thick, meaty books about this, a clue that there can be a lot to it.
 
+The Docker website is good and detailed: [overview](https://docs.docker.com/engine/docker-overview/), [quickstart](https://docs.docker.com/get-started/) and plenty of other links in the menu panel.
 
-[Learn Enough Docker to be Useful](https://towardsdatascience.com/learn-enough-docker-to-be-useful-b7ba70caeb4b)
+Also *lots* of blog posts. These are just a few:
+- Learn Enough Docker to be Useful: [part1](https://towardsdatascience.com/learn-enough-docker-to-be-useful-b7ba70caeb4b), [part 2](https://towardsdatascience.com/learn-enough-docker-to-be-useful-1c40ea269fa8), [part 3](https://towardsdatascience.com/learn-enough-docker-to-be-useful-b0b44222eef5), [part 4](https://towardsdatascience.com/slimming-down-your-docker-images-275f0ca9337e), [part 5](https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421), [part 6](https://towardsdatascience.com/pump-up-the-volumes-data-in-docker-a21950a8cd8)
+- Docker for Beginners: [docker-curriculum.com/(https://docker-curriculum.com/)]
