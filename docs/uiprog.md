@@ -3,8 +3,10 @@ title: UI Programming
 nav_order: 4
 ---
 
+# {{ page.title }}
+
 ## streamlit 
-Website: https://streamlit.io/
+Website: [https://streamlit.io/](https://streamlit.io/)
 
 Blog posts:
 - [Turn Python Scripts into Beautiful ML Tools](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace) - by the inventor of streamlit

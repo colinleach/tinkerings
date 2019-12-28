@@ -3,6 +3,8 @@ title: Jupyter
 nav_order: 2
 ---
 
+# {{ page.title }}
+
 ## Extensions
 
 Optimizing: https://towardsdatascience.com/optimizing-jupyter-notebook-tips-tricks-and-
