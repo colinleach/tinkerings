@@ -8,14 +8,17 @@ nav_order: 15
 This page assumes we're talking about the (free) community edition, Docker CE. Anyone with the budget for the Enterprise Edition can also afford better advice than I can off.
 
 ## Installation
-There is extensive advice on the [Docker website](https://docs.docker.com/install/). Docker Desktop is available for Windows and Mac, though I gave up on the Windows version when it wanted to obliterate my VirtualBox installation.
 
-Docker Engine is available (without the fancy GUI) for many Linux versions. On Mint 19.2, the only problem was adding the apt repository: recent Mint versions seem to deviate from Ubuntu and give error messages. Leave out the `[arch=amd64]` bit and use the command below, perhaps changing `bionic` to match your upstream Ubuntu version (*not* the Mint version such as Tina).
+There is extensive advice on the [Docker website](https://docs.docker.com/install/). Docker Desktop is available for Windows (Pro/Enterprise only, not Home editions) and Mac.
+
+Docker Engine is available (without the fancy GUI and Kubernetes integration) for many Linux versions. On Mint 19.2, the only problem was adding the apt repository: recent Mint versions seem to deviate from Ubuntu and give error messages. Leave out the `[arch=amd64]` bit and use the command below, perhaps changing `bionic` to match your upstream Ubuntu version (*not* the Mint version such as Tina).
 
 ```sh
 sudo add-apt-repository "deb https://download.docker.com/linux/ubuntu bionic stable"
 ```
+
 ## Learning about Docker
+
 There are plenty of thick, meaty books about this, a clue that there can be a lot to it.
 
 The Docker website is good and detailed: [overview](https://docs.docker.com/engine/docker-overview/), [quickstart](https://docs.docker.com/get-started/) and plenty of other links in the menu panel.

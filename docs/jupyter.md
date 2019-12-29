@@ -20,3 +20,5 @@ reviewnb for code review on GitHub: https://www.reviewnb.com/#features
 Jupyter Books: https://jupyterbook.org/intro.html
 
 RISE for slideshows: https://rise.readthedocs.io/en/maint-5.5/index.html
+
+Voila for slideshow and web presentations and dashboards [docs](https://voila.readthedocs.io/)
