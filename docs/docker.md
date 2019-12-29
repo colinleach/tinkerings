@@ -5,7 +5,7 @@ nav_order: 15
 
 # {{ page.title }}
 
-This page assumes we're talking about the (free) community edition, Docker CE. Anyone with the budget for the Enterprise Edition can also afford better advice than I can off.
+This page assumes we're talking about the (free) community edition, Docker CE. Anyone with the budget for the Enterprise Edition can also afford better advice than I can offer.
 
 ## Installation
 

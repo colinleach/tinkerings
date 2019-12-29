@@ -1,7 +1,0 @@
----
-title: Jupyter
----
-
-## Extensions
-
-testing
