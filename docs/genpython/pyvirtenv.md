@@ -54,4 +54,4 @@ Well, it's complicated...
 
 One very detailed view: [A guide to Python virtual environments](https://medium.com/swlh/a-guide-to-python-virtual-environments-8af34aa106ac). Long, opinionated, well worth reading
 
-I largely followed a cheatsheet from the same author and made a [Linux version]({% link ./pyenv_cheat_sheet_linux.md %})
+I largely followed a cheatsheet from the same author and made a [Linux version](pyenv_cheat_sheet_linux.html)
