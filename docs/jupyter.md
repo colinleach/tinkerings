@@ -1,6 +1,6 @@
 ---
 title: Jupyter
-nav_order: 2
+nav_order: 20
 ---
 
 # {{ page.title }}
@@ -12,13 +12,23 @@ nbextensions-26d75d502663
 
 nb-black for prettifying code: https://github.com/dnanhkhoa/nb_black
 
-nbdev for full code development: https://www.fast.ai/2019/12/02/nbdev/,
-https://github.com/fastai/nbdev/
+## nbdev 
+For full code development, exporting Python libraries and modules from Jupyter.
 
-reviewnb for code review on GitHub: https://www.reviewnb.com/#features
+Docs:
+- Website: [https://www.fast.ai/2019/12/02/nbdev/](https://www.fast.ai/2019/12/02/nbdev/)
+- GitHub: [https://github.com/fastai/nbdev/](https://github.com/fastai/nbdev/)
 
-Jupyter Books: https://jupyterbook.org/intro.html
+## reviewnb 
+For code review on GitHub, it gives better Jupyter diffs to help with merging pull requests. Note that this only runs on GitHub, nothing is local.
 
-RISE for slideshows: https://rise.readthedocs.io/en/maint-5.5/index.html
+Docs: [https://www.reviewnb.com/#features](https://www.reviewnb.com/#features)
 
-Voila for slideshow and web presentations and dashboards [docs](https://voila.readthedocs.io/)
+## Jupyter Books
+ https://jupyterbook.org/intro.html
+
+## RISE 
+For slideshows: https://rise.readthedocs.io/en/maint-5.5/index.html
+
+## Voila 
+For slideshow and web presentations and dashboards [docs](https://voila.readthedocs.io/)

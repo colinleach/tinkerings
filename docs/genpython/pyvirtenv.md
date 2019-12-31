@@ -1,6 +1,7 @@
 ---
-title: Virtual Environments
-nav_order: 1
+title: Python Virtual Environments
+parent: General Python
+nav_order: 2
 ---
 
 # {{ page.title }}
@@ -52,3 +53,5 @@ conda is great most of the time but can be a bit brittle: when it goes wrong wit
 Well, it's complicated...
 
 One very detailed view: [A guide to Python virtual environments](https://medium.com/swlh/a-guide-to-python-virtual-environments-8af34aa106ac). Long, opinionated, well worth reading
+
+I largely followed a cheatsheet from the same author and made a [Linux version]({% link ./pyenv_cheat_sheet_linux.md %})

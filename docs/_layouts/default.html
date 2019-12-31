@@ -24,8 +24,8 @@ layout: table_wrappers
       <div class="navigation main-nav js-main-nav">
         {% include nav.html %}
         <div class="personal-links">
-          <p>Author: {{ site.author }}</p>
           {%- if site.github_username -%}
+            <p>Author: <a href="https://{{ site.github_username| cgi_escape | escape }}.github.io/">{{ site.author| escape }}</a></p>
             <p>GitHub: <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">{{ site.github_username| escape }}</a></p>
           {%- endif -%}
         </div>

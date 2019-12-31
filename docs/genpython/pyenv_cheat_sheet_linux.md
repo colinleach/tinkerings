@@ -1,6 +1,12 @@
-# pyenv-virtualenv cheat sheet
+---
+title: pyenv-virtualenv cheat sheet
+parent: General Python
+nav_order: 4
+---
 
-## instructions to nuke your previous anaconda installation
+# {{ page.title }}
+
+## Instructions to nuke your previous anaconda installation
 
 Lora Johns wrote the [Mac version](https://github.com/lorarjohns/awesomeVenvs). This is a close copy translated for Linux (specifically, my Mint 19.2 system).
 
@@ -24,7 +30,7 @@ grep -iR "Anaconda3" ~
 source ~/.bashrc
 ```
 
-## install pyenv and pyenv-virtualenv (Linux instructions)
+## Install pyenv and pyenv-virtualenv (Linux instructions)
 
 1. Install pyenv and pyenv-virtualenv from source. 
 
@@ -34,7 +40,7 @@ You can clone the GitHub repos (instructions in their READMEs), but running pyen
 curl https://pyenv.run | bash
 ```
 
-2. configure pyenv and pyenv-virtualenv
+2. Configure pyenv and pyenv-virtualenv
 
 ```sh
 echo 'export PYENV_ROOT= "$HOME/.pyenv"' >> ~/.bashrc
@@ -43,20 +49,20 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 ```
 
-3. install python versions with pyenv
+3. Install python versions with pyenv
 
 - get a list of options: `pyenv install --list`
 - remove a version: `pyenv uninstall`
 - install a version: `pyenv install`
 
-4. set your global and local pythons
+4. Set your global and local pythons
 
 - set your global python: `pyenv global 3.x.x`
 - set your local (project) python--**important** for venv switching! `pyenv local 3.x.x`
 - set a version for the current shell: `pyenv shell 3.x.x`
 - use a one-off python module or command: `pyenv exec python [-m, -c]`
 
-5. create and activate virtual environments
+5. Create and activate virtual environments
 
 - set local python: `pyenv local 3.x.x` or `pyenv local anaconda xxxx.xx`
 - make a venv: `pyenv virtualenv 3.x.x name-of-your-new-venv`
@@ -85,9 +91,9 @@ echo 'alias virtualenv="pyenv virtualenv"' >> ~/.bashrc
 
 - now you can open files and directories from the command line with `code .`, `code file.py`, `code. /path/to/stuff/`, etc.
 
-5. launch a project directory with anaconda or jupyter enabled with `code /path/to/project`.
+5. Launch a project directory with anaconda or jupyter enabled with `code /path/to/project`.
 6. command+shift+P `Python: Create New Blank Jupyter Notebook` (or open an existing one, if you like)
-7. convert notebooks to .py scripts with one click
+7. Convert notebooks to .py scripts with one click
 
 ## More VSCode fun
 
