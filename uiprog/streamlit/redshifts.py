@@ -97,4 +97,7 @@ st.bokeh_chart(p)
 
 import plotly.express as px
 p2 = px.line(df_long, x="zvals", y="lookback", color='model')
+p2.update_xaxes(title_text='Redshift z')
+p2.update_yaxes(title_text='Lookback time (GYr)')
+
 st.plotly_chart(p2)
