@@ -18,9 +18,17 @@ Blog posts:
 - [Turn your data science scripts into websites with Streamlit](https://gilberttanner.com/blog/turn-your-data-science-script-into-websites-with-streamlit)
 
 ## PySimpleGUI
+
+Simplifies creating UIs in tkinter, Qt or wxPython on the desktop or via Remi in a browser. Fundamentally single-user mode, it won't serve web pages to a broad community.
+
 Docs: [https://pysimplegui.readthedocs.io/en/latest/](https://pysimplegui.readthedocs.io/en/latest/)
+GitHub: [desktop](https://github.com/PySimpleGUI/PySimpleGUI), [browser](https://github.com/PySimpleGUI/PySimpleGUI/tree/master/PySimpleGUIWeb)
 
 Blog posts:
 - [Building a Python UI for Comparing Data](https://towardsdatascience.com/building-a-python-ui-for-comparing-data-13c10693d9e4)
 
 ## Qt
+
+Big and complex. It can do pretty much anything, but maybe not easily. In C++ with (confusingly) two competing Python wrappers, of which the most mature has two very different names.
+
+
