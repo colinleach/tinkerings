@@ -29,6 +29,15 @@ Blog posts:
 
 ## Qt
 
-Big and complex. It can do pretty much anything, but maybe not easily. In C++ with (confusingly) two competing Python wrappers, of which the most mature has two very different names.
+Big and complex. It can do pretty much anything, but maybe not easily. In C++ with (confusingly) two competing Python wrappers, one of which has two very different names.
 
+The open-source version works well across Windows/Linux/Mac, with identical source code. The commercial version also supports phones, cars, TVs fridges, toasters, and things I don't even recognize the name of. Probably also space satellites, though I can't be sure.
+
+A full download is probably not necessary but I did it anyway. Be careful, it ends up as many GB on disk.
+
+Main web page: [qt.io/](https://www.qt.io/), but most of us want [open source](https://www.qt.io/download-open-source)
+
+The same company now supplies Python bindings, called [Qt for Python](https://doc.qt.io/qtforpython/) in the docs but PySide2 in pip and in your import statement. 
+
+There is also the (somewhat older?) PyQt from Riverbank Computing. Get it with `pip install PyQt5` and use it with statements similar to `from PyQt5.QtCore import QObject`.
 
