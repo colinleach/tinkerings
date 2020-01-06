@@ -18,6 +18,10 @@ Daddy of them all, sometimes literally. Complex, infinitely versatile, data-agno
 
 Beware, there are two APIs with confusingly different syntax. The 'Matlab' version is simple to use but not very customizable. The 'object oriented' version needs a bit more code up front but there have been [persuasive arguments](https://pbpython.com/effective-matplotlib.html) that any data scientist should always use this from the start.
 
+**Book:** VanderPlas, "Python Data Science Handbook", chapter 4
+
+This is a must-read for anyone wanting to dig deeper into Matplotlib. The printed version is relatively affordable, and the entire text is also freely available in [Jupyter notebook format](https://github.com/jakevdp/PythonDataScienceHandbook) and [HTML format](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
 ## Packages based on MPL
 
 Since MPL is relatively low-level but ultra-flexible, there are various approaches to adding an interface layer on top. These add more domain-appropriate defaults and useful, easy to use functions.
@@ -38,4 +42,28 @@ Seaborn isn't general-purpose, but it can be excellent at what it chooses to foc
 
 It was [Hadley Wickham](http://hadley.nz) who started it, an R programmer who created ggplot2 and wrote a [famous book](https://smile.amazon.com/gp/product/331924275X) about it. Data scientists working in Python often refer to 'ggplot envy', and there have been various attempts to pythonize the concepts.
 
-### ggplot
+### ggplot/ggpy
+
+The version from yhat. Various websites are still live, but there appears to be no active development of this under either name since about 2016.
+
+### plotnine
+
+Another ggplot2-like package, which appears to have an active development community (late 2019). 
+
+Links: [docs](https://plotnine.readthedocs.io/en/latest/), [Github](https://github.com/has2k1/plotnine)
+
+### Altair
+
+Newer than plotnine, different internals and somewhat different syntax, but firmly in the spirit of the grammar of graphics. Also an interestingly different implementation: Python code is translated to JSON, then passed to Vega Lite, a Javascript package which does the actual rendering. 
+
+
+## Interactive packages for web browsers
+
+These (like Altair, above) are built on top of Javascript libraries. Client-side code allows interactive pan, zoom, tooltips, file save and other user controls.
+
+### Bokeh
+
+
+### Plotly
+
+
