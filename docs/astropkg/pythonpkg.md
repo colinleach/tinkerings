@@ -55,3 +55,7 @@ A python wrapper for the Worldwide Telescope. It runs in Jupyter notebooks or in
 I haven't yet got it working in streamlit. 
 
 ## Rebound
+
+Primarily an efficient N-body simulator, but it also does animated displays in Jupyter that are otherwise quite difficult. It has APIs for both C and Python. I like this package!
+
+Links: [docs](https://rebound.readthedocs.io/en/latest/), [GitHub](http://github.com/hannorein/rebound). There are lots of non-trivial examples.

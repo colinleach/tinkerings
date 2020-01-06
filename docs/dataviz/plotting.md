@@ -56,6 +56,7 @@ Links: [docs](https://plotnine.readthedocs.io/en/latest/), [Github](https://gith
 
 Newer than plotnine, different internals and somewhat different syntax, but firmly in the spirit of the grammar of graphics. Also an interestingly different implementation: Python code is translated to JSON, then passed to Vega Lite, a Javascript package which does the actual rendering. 
 
+Links: [docs](), [GitHub]()
 
 ## Interactive packages for web browsers
 
@@ -63,7 +64,31 @@ These (like Altair, above) are built on top of Javascript libraries. Client-side
 
 ### Bokeh
 
+Describes itself as 'an interactive visualization library for modern web browsers'. A NumFocus open-source project (like NumPy, Pandas, Jupyter, Astropy...) so takes integration seriously.
 
-### Plotly
+Links: [docs](https://docs.bokeh.org/en/latest/index.html), [GitHub](https://github.com/bokeh/bokeh)
 
+Blogs:
+- Data Visualization with Bokeh in Python [part 1](https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-getting-started-a11655a467d4), [part 2](https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-ii-interactions-a4cf994e2512), [part 3]
+(https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-iii-a-complete-dashboard-dc6a86aa6e23). Though the author has also written that he [prefers Plotly](https://medium.com/@williamkoehrsen/the-plotly-syntax-is-more-intuitive-than-bokeh-which-means-plots-are-quicker-to-make-and-you-have-cd2598e8bcbd)! More efficient syntax and superior documentation, in his view.
+- [Interactive Data Visualization in Python With Bokeh](https://realpython.com/python-data-visualization-bokeh/)
+- [Visualizing Data with Bokeh and Pandas](https://programminghistorian.org/en/lessons/visualizing-with-bokeh)
 
+### Plotly, etc
+
+Plotly is a charting library built on top of d3.js. It is largely commercial but with an open-source Python version. The website will keep trying to sell you stuff but don't feel distracted - the important things are free.
+
+Working with Pandas dataframes (and who wouldn't?) has been fraught and complex in the past. The recommendation used to be cufflinks as an add-in package, but Plotly API changes kept breaking it. I hated the whole mess and stuck to Bokeh as a more stable alternative.
+
+Since mid-2019 it looks like the way to go is Plotly Express, described as 'a terse, consistent, high-level API for rapid data exploration and figure generation'. Thus, ignore anything on the web that talks about cufflinks, express or plotly_express, which is pretty much *everything* on the web. These are all now superceded by Plotly Express within Plotly 4.x. All clear?
+
+They say Seaborn is an inspiration for Plotly Express, and it feels that way. Prettier and much more interactive, though.
+
+Plotly: [docs](https://plot.ly/python/), [GitHub](https://github.com/plotly/plotly.py)
+
+Plotly Express: [docs](https://plot.ly/python/plotly-express/). No idea about GitHub.
+
+Blogs:
+- [Introducing Plotly Express](https://medium.com/plotly/introducing-plotly-express-808df010143d?). Written by Plotly, so very positive.
+- [Plotly Express: the Good, the Bad, and the Ugly](https://towardsdatascience.com/plotly-express-the-good-the-bad-and-the-ugly-dc941649687c). Leans positive, but points out some rough edges in this new/immature package.
+- [The Next Level of Data Visualization in Python](https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e). Pre-Express but still makes some good points.
