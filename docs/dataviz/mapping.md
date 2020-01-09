@@ -38,6 +38,9 @@ Commercial but with a decent free tier. You need your own API key.
 
 Link: [homepage](https://developer.tomtom.com/)
 
+Blogs:
+- [Introduction to a Mapping API: TomTom](https://blog.goodaudience.com/python-tomtom-api-7c16d9fd7605)
+
 There is a [Geocoding API for Python](https://geocoder.readthedocs.io/providers/TomTom.html)
 
 ### Geocoder
@@ -106,3 +109,15 @@ Links: [docs](https://ipyleaflet.readthedocs.io/en/latest/), [GitHub](https://gi
 
 Blogs:
 - [Interactive GIS in Jupyter with ipyleaflet](https://blog.jupyter.org/interactive-gis-in-jupyter-with-ipyleaflet-52f9657fa7a)
+
+### geoplot
+
+https://residentmario.github.io/geoplot/quickstart/quickstart.html
+
+### geoplotlib
+
+https://github.com/andrea-cuttone/geoplotlib
+
+### Jupyter-gmaps
+
+https://github.com/pbugnion/gmaps

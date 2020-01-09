@@ -28,7 +28,13 @@ Docs: [https://www.reviewnb.com/#features](https://www.reviewnb.com/#features)
  https://jupyterbook.org/intro.html
 
 ## RISE 
-For slideshows: https://rise.readthedocs.io/en/maint-5.5/index.html
+For slideshows
+
+links: [docs](https://rise.readthedocs.io/en/maint-5.5/index.html)
 
 ## Voila 
-For slideshow and web presentations and dashboards [docs](https://voila.readthedocs.io/)
+
+For web presentations and dashboards. Serve the notebook in a browser with all ipywidgets live but the code either hidden or shown read-only.
+
+Links: [docs](https://voila.readthedocs.io/), [GitHub](https://github.com/voila-dashboards/voila)
+
