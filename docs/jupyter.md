@@ -36,5 +36,7 @@ links: [docs](https://rise.readthedocs.io/en/maint-5.5/index.html)
 
 For web presentations and dashboards. Serve the notebook in a browser with all ipywidgets live but the code either hidden or shown read-only.
 
+Note that it's designed for ipywidgets and generally static content. It won't work for complex packages like Plotly and Bokeh that sort-of-tolerate Jupyter but aren't really designed for that environment.
+
 Links: [docs](https://voila.readthedocs.io/), [GitHub](https://github.com/voila-dashboards/voila)
 
