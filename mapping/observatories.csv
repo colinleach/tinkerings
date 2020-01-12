@@ -1,39 +1,39 @@
-,name,lat,lon,region
-0,Apache Point,32.78000000000001,-105.82000000000002,NorthAmerica
-1,Catalina Observatory,32.416666666666664,-110.73166666666665,NorthAmerica
-2,Discovery Channel Telescope,34.744305000000004,-111.42251500000002,NorthAmerica
-3,Kitt Peak,31.963333333333342,-111.6,NorthAmerica
-4,Lick Observatory,37.34333333333334,-121.63666666666668,NorthAmerica
-5,Lowell Observatory,35.09666666666667,-111.53500000000003,NorthAmerica
-6,Mt Graham,32.70159999999999,-109.87190000000001,NorthAmerica
-7,Palomar,33.356,-116.86300000000001,NorthAmerica
-8,Very Large Array,34.07874916666667,-107.61828305555555,NorthAmerica
-9,Whipple Observatory,31.68094444444444,-110.8775,NorthAmerica
-10,McDonald Observatory,30.671666694444443,-104.02166669444443,NorthAmerica
-11,Sunspot,32.78729999999999,-105.82050000000001,NorthAmerica
-12,Green Bank Telescope,38.43305599999999,-79.839722,NorthAmerica
-13,"Observatorio Astronomico Nacional, San Pedro Martir",31.029166666666665,-115.48694444444445,NorthAmerica
-14,"Observatorio Astronomico Nacional, Tonantzintla",19.032777777777778,-98.31388888888887,NorthAmerica
-15,Dominion Astrophysical Observatory,48.521666666666675,-123.41666666666666,NorthAmerica
-16,Manastash Ridge Observatory,46.9528,-120.7278,NorthAmerica
-17,Black Moshannon Observatory,40.92166666666666,-78.005,NorthAmerica
-18,ALMA,-23.028999999999996,-67.755,SouthAmerica
-19,Cerro Paranal,-24.627439409999997,-70.40498688,SouthAmerica
-20,Cerro Tololo,-30.165277777777778,-70.815,SouthAmerica
-21,Gemini South,-30.240741666666672,-70.7366833333333,SouthAmerica
-22,La Silla Observatory,-29.25666666666666,-70.73000000000002,SouthAmerica
-23,Las Campanas Observatory,-29.003333333333334,-70.70166666666665,SouthAmerica
-24,National Observatory of Venezuela,8.79,-70.86666666666669,SouthAmerica
-25,Mt. Stromlo Observatory,-35.32065,149.02433333333335,Australia
-26,Murchison Widefield Array,-26.70331940000001,116.67081523999998,Australia
-27,Siding Spring Observatory,-31.273361111111104,149.06119444444445,Australia
-28,Anglo-Australian Observatory,-31.277038888888896,149.06608611111113,Australia
-29,greenwich,51.47781100000001,-0.001475,EuropeMed
-30,Noto,36.87585,14.988900000000001,EuropeMed
-31,Mt. Ekar 182 cm. Telescope,45.848588888888884,11.581133333333332,EuropeMed
-32,TUG,36.82416600000001,30.335555000000003,EuropeMed
-33,Roque de los Muchachos,28.758333333333322,-17.879999999999992,EuropeMed
-34,Medicina Dish,44.5205,11.646900000000002,EuropeMed
-35,Vainu Bappu Observatory,12.576659999999999,78.8266,Asia
-36,Beijing XingLong Observatory,40.393333333333324,117.57500000000002,Asia
-37,Southern African Large Telescope,-32.375823,20.810807999999998,Africa
+name,lat,lon,region
+Apache Point,32.78000000000001,-105.82000000000002,NorthAmerica
+Catalina Observatory,32.416666666666664,-110.73166666666665,NorthAmerica
+Discovery Channel Telescope,34.744305000000004,-111.42251500000002,NorthAmerica
+Kitt Peak,31.963333333333342,-111.6,NorthAmerica
+Lick Observatory,37.34333333333334,-121.63666666666668,NorthAmerica
+Lowell Observatory,35.09666666666667,-111.53500000000003,NorthAmerica
+Mt Graham,32.70159999999999,-109.87190000000001,NorthAmerica
+Palomar,33.356,-116.86300000000001,NorthAmerica
+Very Large Array,34.07874916666667,-107.61828305555555,NorthAmerica
+Whipple Observatory,31.68094444444444,-110.8775,NorthAmerica
+McDonald Observatory,30.671666694444443,-104.02166669444443,NorthAmerica
+Sunspot,32.78729999999999,-105.82050000000001,NorthAmerica
+Green Bank Telescope,38.43305599999999,-79.839722,NorthAmerica
+"Observatorio Astronomico Nacional, San Pedro Martir",31.029166666666665,-115.48694444444445,NorthAmerica
+"Observatorio Astronomico Nacional, Tonantzintla",19.032777777777778,-98.31388888888887,NorthAmerica
+Dominion Astrophysical Observatory,48.521666666666675,-123.41666666666666,NorthAmerica
+Manastash Ridge Observatory,46.9528,-120.7278,NorthAmerica
+Black Moshannon Observatory,40.92166666666666,-78.005,NorthAmerica
+ALMA,-23.028999999999996,-67.755,SouthAmerica
+Cerro Paranal,-24.627439409999997,-70.40498688,SouthAmerica
+Cerro Tololo,-30.165277777777778,-70.815,SouthAmerica
+Gemini South,-30.240741666666672,-70.7366833333333,SouthAmerica
+La Silla Observatory,-29.25666666666666,-70.73000000000002,SouthAmerica
+Las Campanas Observatory,-29.003333333333334,-70.70166666666665,SouthAmerica
+National Observatory of Venezuela,8.79,-70.86666666666669,SouthAmerica
+Mt. Stromlo Observatory,-35.32065,149.02433333333335,Australia
+Murchison Widefield Array,-26.70331940000001,116.67081523999998,Australia
+Siding Spring Observatory,-31.273361111111104,149.06119444444445,Australia
+Anglo-Australian Observatory,-31.277038888888896,149.06608611111113,Australia
+greenwich,51.47781100000001,-0.001475,EuropeMed
+Noto,36.87585,14.988900000000001,EuropeMed
+Mt. Ekar 182 cm. Telescope,45.848588888888884,11.581133333333332,EuropeMed
+TUG,36.82416600000001,30.335555000000003,EuropeMed
+Roque de los Muchachos,28.758333333333322,-17.879999999999992,EuropeMed
+Medicina Dish,44.5205,11.646900000000002,EuropeMed
+Vainu Bappu Observatory,12.576659999999999,78.8266,Asia
+Beijing XingLong Observatory,40.393333333333324,117.57500000000002,Asia
+Southern African Large Telescope,-32.375823,20.810807999999998,Africa
