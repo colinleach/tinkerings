@@ -85,7 +85,7 @@ A Python package 'designed to make drawing maps for data analysis and visualisat
 
 Cartopy (more or less) replaces basemap, which is no longer maintained. It typically generates static maps in Matplotlib.
 
-Links: [docs](https://scitools.org.uk/cartopy/docs/latest/), [GitHub](https://github.com/SciTools/cartopy)
+Links: [docs](https://scitools.org.uk/cartopy/docs/latest/), [GitHub](https://github.com/SciTools/cartopy). The docs are strong on example code. The API reference is quite spread around.
 
 ## Viewers
 
