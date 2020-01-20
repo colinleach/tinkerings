@@ -5,106 +5,94 @@ import matplotlib.pyplot as plt
 
 from astropy import units as u
 from astropy.coordinates import SkyCoord, EarthLocation, AltAz
-
+from astropy.io.misc import yaml
 from astropy.time import Time
 # from IPython.display import Image
 
-from urllib.parse import urlencode
-from urllib.request import urlretrieve
+# from urllib.parse import urlencode
+# from urllib.request import urlretrieve
 
-southwest = [
- 'Apache Point',
- 'Catalina Observatory',
- 'Discovery Channel Telescope',
-#  'Hale Telescope',
- 'Kitt Peak',
-#  'Large Binocular Telescope',
- 'Lick Observatory',
- 'Lowell Observatory',
- 'Mt Graham',
-#  'Multiple Mirror Telescope',
- 'Palomar',
-#  'Sacramento Peak',
- 'Very Large Array',
- 'Whipple Observatory',
-]
+class Observatories():
+    """
 
-chile = [
-    'ALMA',
-    'Cerro Paranal',
-    'Cerro Tololo',
-    'Gemini South',
-    'La Silla Observatory',
-    'Las Campanas Observatory',
-    # 'Paranal Observatory',
-]
-regions = {'SouthWestUS': southwest,
-            'Chile': chile}
-curr_region = st.sidebar.selectbox("Choose a region", list(regions.keys()), 0)
-st.sidebar.markdown("There is currently a [bug in streamlit](https://github.com/streamlit/streamlit/issues/475)")
-st.sidebar.markdown("This prevents the map scrolling automatically to the new region")
-st.sidebar.markdown("For now, use the mouse to pan and zoom - sorry")
+    """
 
-sites = regions[curr_region]
-curr_site = st.sidebar.radio("Sites in this region", sites)
+    def __init__(self):
+        with open('obs.yaml', 'r') as file:
+            self.loc = yaml.load(file)
+        self.df = pd.read_csv('observatories.csv')
+        self.regions = list(self.df.region.unique())
+        self.curr_region = 'NorthAmerica'
 
-@st.cache
-def get_locations():
-    return [EarthLocation.of_site(s) for s in sites]
+    def get_region(self):
+        self.curr_region = st.sidebar.radio("Choose a region", self.regions)
+        st.sidebar.markdown(
+            "There is currently a [bug in streamlit]" +
+            "(https://github.com/streamlit/streamlit/issues/475) " +
+            "which prevents the map scrolling automatically to the new region")
+        st.sidebar.markdown("For now, use the mouse to pan and zoom - sorry")
+        self.get_site()
 
-locations = get_locations()
+    def get_site(self):
+        st.markdown(self.curr_region)
+        self.sites = list(self.df[self.df.region == self.curr_region].name)
+        self.curr_site = st.sidebar.selectbox("Sites in this region", self.sites)
+        self.show_loc()
 
-@st.cache
-def make_locations_df():
-    df = pd.DataFrame()
-    df['name'] = sites
-    df['lat'] = [loc.lat.value for loc in locations]
-    df['lon'] = [loc.lon.value for loc in locations]
-    return df
+    def get_midpoint(self):
+        # Adding code so we can have map default to the center of the data
+        # Currently viewport only set on initial load: accepted as bug 
+        region_df = self.df[self.df.region == self.curr_region]
+        return (np.average(region_df['lat']), np.average(region_df['lon']))
 
-df = make_locations_df()
+    def show_chart(self):
+        midpoint = self.get_midpoint()
+        st.deck_gl_chart(
+                    viewport={
+                        'latitude': midpoint[0],
+                        'longitude':  midpoint[1],
+                        'zoom': 2,
+                    },
+                    layers=[{
+                        'type': 'ScatterplotLayer',
+                        'data': self.df,
+                        'radiusScale': 150,
+                        'radiusMinPixels': 5,
+                        'getFillColor': [248, 24, 148],
+                        'pickable': True,
+                    },
+                        {
+                        "type": "TextLayer",
+                        "data": self.df,
+                        "getText": "name",
+                        "getColor": [0, 0, 200, 200],
+                        "getSize": 15,
+                    },
+                ]
+            )
 
-# Adding code so we can have map default to the center of the data
-# Currently viewport only set on initial load: accepted as bug 
-midpoint = (np.average(df['lat']), np.average(df['lon']))
+    def show_loc(self):
+        st.markdown(f"## {self.curr_site}")
+        current_time = Time.now()
+        self.observing_location = self.loc[self.curr_site]
+        here = self.df.loc[self.df['name'] == self.curr_site].iloc[0]
+        st.markdown(f"Latitude: {self.observing_location.lat:.2f}, " +
+                        "Longitude: {self.observing_location.lon:.2f}")
 
-st.deck_gl_chart(
-            viewport={
-                'latitude': midpoint[0],
-                'longitude':  midpoint[1],
-                'zoom': 5,
-                # 'pitch': 50,
-            },
-            layers=[{
-                'type': 'ScatterplotLayer',
-                'data': df,
-                'radiusScale': 150,
-                'radiusMinPixels': 5,
-                # 'elevationScale': 4,
-                # 'elevationRange': [0, 1000],
-                'getFillColor': [248, 24, 148],
-                'pickable': True,
-                # 'extruded': True,
-            },
-                {
-                "type": "TextLayer",
-                "data": df,
-                "getText": "name",
-                "getColor": [0, 0, 200, 200],
-                "getSize": 15,
-            },
-        ]
-    )
+    def show_sky_coord(self):
+        current_time = Time.now()
+        obj_name = 'm31'
+        vega = SkyCoord.from_name(obj_name)
+        aa_now = AltAz(location=self.observing_location, obstime=current_time)
+        sky_coord = vega.transform_to(aa_now)
+        st.markdown(f"{obj_name}: currently Alt = {sky_coord.alt:.2f}, Az = {sky_coord.az:.2f}")
 
-st.markdown(f"## {curr_site}")
-current_time = Time.now()
-observing_location = locations[sites.index(curr_site)]
-here = df.loc[df['name'] == curr_site].iloc[0]
-st.markdown(f"Latitude: {observing_location.lat:.2f}, Longitude: {observing_location.lon:.2f}")
+    def show_interface(self):
+        self.get_region()
+        self.show_chart()
+        self.show_sky_coord()
 
-# st.markdown(f"")
-obj_name = 'm31'
-vega = SkyCoord.from_name(obj_name)
-aa_now = AltAz(location=observing_location, obstime=current_time)
-sky_coord = vega.transform_to(aa_now)
-st.markdown(f"{obj_name}: currently Alt = {sky_coord.alt:.2f}, Az = {sky_coord.az:.2f}")
+if __name__ == "__main__":
+    obs = Observatories()
+    obs.show_interface()
+
