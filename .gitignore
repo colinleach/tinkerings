@@ -135,4 +135,7 @@ _site/
 .jekyll-metadata
 docs/_site
 docs/_site/index.html
+
+# others
 uiprog/streamlit/observatories.lis
+genpython/testing/
