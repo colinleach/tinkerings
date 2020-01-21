@@ -73,16 +73,14 @@ class Observatories():
 
     def show_loc(self):
         st.markdown(f"## {self.curr_site}")
-        current_time = Time.now()
         self.observing_location = self.loc[self.curr_site]
         here = self.df.loc[self.df['name'] == self.curr_site].iloc[0]
         st.markdown(f"Latitude: {self.observing_location.lat:.2f}, " +
                     f"Longitude: {self.observing_location.lon:.2f}, " +
                     f"Height: {self.observing_location.height:.0f}")
 
-    def show_sky_coord(self):
-        current_time = Time.now()
-        aa_now = AltAz(location=self.observing_location, obstime=current_time)
+    def show_sky_coord(self, obs_time=Time.now()):
+        aa_now = AltAz(location=self.observing_location, obstime=obs_time)
 
         sky_coords = {}
         obj_names = st.sidebar.text_input('Sky object names (comma separated)', 'm31, vega')
