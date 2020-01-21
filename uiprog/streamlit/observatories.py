@@ -77,15 +77,25 @@ class Observatories():
         self.observing_location = self.loc[self.curr_site]
         here = self.df.loc[self.df['name'] == self.curr_site].iloc[0]
         st.markdown(f"Latitude: {self.observing_location.lat:.2f}, " +
-                        "Longitude: {self.observing_location.lon:.2f}")
+                    f"Longitude: {self.observing_location.lon:.2f}, " +
+                    f"Height: {self.observing_location.height:.0f}")
 
     def show_sky_coord(self):
         current_time = Time.now()
-        obj_name = 'm31'
-        vega = SkyCoord.from_name(obj_name)
         aa_now = AltAz(location=self.observing_location, obstime=current_time)
-        sky_coord = vega.transform_to(aa_now)
-        st.markdown(f"{obj_name}: currently Alt = {sky_coord.alt:.2f}, Az = {sky_coord.az:.2f}")
+
+        sky_coords = {}
+        obj_names = st.sidebar.text_input('Sky object names (comma separated)', 'm31, vega')
+        st.markdown(f'### Current sky positions from {self.curr_site}')
+        for obj_name in obj_names.split(','):
+            try:
+                obj = SkyCoord.from_name(obj_name)
+            except:
+                st.markdown(f'**{obj_name}:** not found in Sesame')
+                continue
+            sky_coords[obj_name] = obj.transform_to(aa_now)
+            st.markdown(f"**{obj_name}:** Alt = {sky_coords[obj_name].alt:.2f}, " +
+                                        f"Az = {sky_coords[obj_name].az:.2f}")
 
     def show_interface(self):
         self.get_region()
